@@ -3,7 +3,7 @@
     <?php echo form_open_multipart('',array('id'=>'form-groups'));?>
     <div class="clearfix"></div>
     <div class="form-group">
-        <label>Tên sản phẩm</label>
+        <label>Tên nhóm sản phẩm</label>
         <div class="relative"><textarea class="form-control area-input" rows="1" name="name" id="name" data-error="Nhập tên"><?=(isset($items)) ? $items->name : ''?></textarea></div>
     </div>
     <div class="form-group">

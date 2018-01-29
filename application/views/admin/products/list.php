@@ -33,7 +33,6 @@
                     <td class="w100 act">
                         <a href="<?=site_url('admin/productcontroller/edit/'.$item->id); ?>" ><span class="glyphicon glyphicon-pencil"></span></a>
                         <a class="delete-confirm" href="<?=site_url('admin/productcontroller/delete/'.$item->id); ?>"><span class="glyphicon glyphicon-trash"></span></a> 
-                        <a href="<?=site_url('admin/productcontroller/display/'.$item->id); ?>"><span class="glyphicon glyphicon-plus"></span></a>                               
                     </td>
                 </tr>
                 <?php } ?>

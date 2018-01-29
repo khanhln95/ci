@@ -38,13 +38,5 @@ class Products_model extends CI_Model {
         $this->db->delete($this->tb_name);
     }
 
-    //đưa sản phẩm ra HTML
-    public function display($id){
-        $this->db->where($this->id_products, $id);
-        // $this->db->where($this->cate_id, $cateid);
-        $query = $this->db->get($this->tb_name);
-        return $query->result();
-    }
-
 }
 ?>

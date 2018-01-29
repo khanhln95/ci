@@ -10,7 +10,7 @@
             <thead>
                 <tr>
                     <th class="w50">STT</th>
-                    <th>Tên</th>
+                    <th>Tên nhóm</th>
                     <th>Mô tả</th>
                     <th class="w100">Hành động</th>
                 </tr>

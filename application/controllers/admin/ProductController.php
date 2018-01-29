@@ -86,27 +86,6 @@ public function index() {
     $this -> data['data'] = $this->products_model->getData();
     $this -> render('admin/products/list');
 }
-public function display($id=NULL){
-    $this->data['button_title'] = 'Add';
-    $this->data['id_product'] = $id;
-    // $this->data['result'] = array(); 
-    // $this->pro = $this->products_model->display($id);
-    // if(is_array($this->data['result'])){
-    //     $this->data['result'] = array_push($this->data['result'], $this->pro);
-    // }
-    $this->data['result'] = $this->products_model->display($id);
-    // $this->pro = $this->products_model->getSingleData($id)->cateid;
-    // switch($this->pro){
-    //     case 1: $this->data['clothing'] = $this->products_model->display($id);
-    //     break;
-    //     case 2: $this->data['bag'] = $this->products_model->display($id);
-    //     break;
-    //     case 3: $this->data['sale'] = $this->products_model->display($id);
-    //     break;
-    // }
-    $this->load->view('admin/products/layout', $this->data);
-}
-
 
 }
 ?>

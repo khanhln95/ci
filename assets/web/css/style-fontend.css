@@ -669,10 +669,10 @@ header {
   text-decoration: none;
   color: #fff;
 }
-/*#mid-content .list-clothing .owl-nav{
+#mid-content .list-clothing .owl-nav{
   float: right;
   margin-top: -500px;
-}*/
+}
 #advertise {
   float: left;
   height: auto;

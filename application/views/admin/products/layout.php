@@ -75,7 +75,6 @@
 								});
 							});
 						});
-
 						$('#result').on('click', 'li', function() {
 							var click_text = $(this).text().split('|');
 							$('#txt-search').val($.trim(click_text[0]));
@@ -197,6 +196,8 @@
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 list-clothing">
 					<div class="owl-carousel owl-theme owl-clothing">
+						<?php foreach ($result as $i => $item) { ?>
+						<?php if($item->cateid == 1){ ?>
 						<div class="item">
 							<div class="img-sp">
 								<div class="saler">
@@ -211,13 +212,10 @@
 									<a href=""><span class="fa fa-heart-o"></span></a>
 									<a href=""><span class="fa fa-exchange"></span></a>
 								</div>
-								<?php foreach ($result as $i => $item) { ?>
+								
 								<?php if($item->picture != ''){?>
 								<img src="<?=base_url()?>uploads/<?=$item->picture?>">
-								<?php } ?>
-
-
-								<?php } ?>
+								
 
 
 							</div>
@@ -242,6 +240,11 @@
 								</fieldset>
 							</div>
 						</div>
+						<?php } ?>
+
+
+						<?php } ?>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
@@ -256,6 +259,8 @@
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 list-bag">
 				<div class="owl-carousel owl-theme owl-shoe">
+					<?php foreach ($result as $i => $item) { ?>
+					<?php if($item->cateid == 2){ ?>
 					<div class="item">
 						<div class="img-sp">
 							<div class="saler">
@@ -270,7 +275,8 @@
 								<a href=""><span class="fa fa-heart-o"></span></a>
 								<a href=""><span class="fa fa-exchange"></span></a>
 							</div>
-							<img src="<?=base_url()?>assets/web/img/shoe1.jpg">
+							<?php if($item->picture != ''){?>
+							<img src="<?=base_url()?>uploads/<?=$item->picture?>">
 
 						</div>
 						<div class="name">
@@ -294,44 +300,11 @@
 							</fieldset>
 						</div>
 					</div>
-					<div class="item">
-						<div class="img-sp">
-							<div class="saler">
-								<a href="#" class="new">New</a>
-								<br>
-								<a href="#" class="sale">Sale</a>
-								<p class="rate">-15%</p>
-							</div>
+					<?php } ?>
 
-							<div class="hover">
-								<a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
-								<a href=""><span class="fa fa-heart-o"></span></a>
-								<a href=""><span class="fa fa-exchange"></span></a>
-							</div>
-							<img src="<?=base_url()?>assets/web/img/shoe2.jpg">
 
-						</div>
-						<div class="name">
-							Jersey Shorts in Mid-Length
-						</div>
-						<div class="cost">
-							<p>$696,000 <span>$700.000</span></p>
-						</div>
-						<div class='rating-widget'>
-							<fieldset class="rating">
-								<input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
-								<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-								<input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
-								<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-								<input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
-								<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-								<input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-								<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-								<input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
-								<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-							</fieldset>
-						</div>
-					</div>
+					<?php } ?>
+					<?php } ?>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 bn-bag">
@@ -371,12 +344,15 @@
 		</div>
 		<div class="col-xs-12 col-md-12 sell">
 			<div class="owl-carousel owl-theme owl-bestSeller">
+				<?php foreach ($result as $i => $item) { ?>
+				<?php if($item->cateid == 3){ ?>
 				<div class="item">
 					<div class="img-sp">
 						<div class="saler">
 							<a href="#" class="new">New</a>
 						</div>
-						<img src="<?=base_url()?>assets/web/img/sli1.jpg">
+						<?php if($item->picture != ''){?>
+						<img src="<?=base_url()?>uploads/<?=$item->picture?>">
 
 					</div>
 					<div class="name">
@@ -400,117 +376,11 @@
 						</fieldset>
 					</div>
 				</div>
-				<div class="item">
-					<div class="img-sp">
-						<div class="saler">
-							<a href="#" class="sale">Sale</a>
-						</div>
+				<?php } ?>
 
-						<img src="<?=base_url()?>assets/web/img/sli2.jpg">
 
-					</div>
-					<div class="name">
-						Three Dots 3/4 Sleeve Deep V-Neck
-					</div>
-					<div class="cost">
-						<p>$696,000</p>
-					</div>
-					<div class='rating-widget'>
-						<fieldset class="rating">
-							<input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
-							<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-							<input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
-							<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-							<input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
-							<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-							<input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-							<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-							<input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
-							<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-						</fieldset>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img-sp">
-
-						<img src="<?=base_url()?>assets/web/img/sli3.jpg">
-
-					</div>
-					<div class="name">
-						Free People Super Cycle, ersey Number Graphic
-					</div>
-					<div class="cost">
-						<p>$696,000 <span>$700.000</span></p>
-					</div>
-					<div class='rating-widget'>
-						<fieldset class="rating">
-							<input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
-							<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-							<input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
-							<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-							<input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
-							<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-							<input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-							<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-							<input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
-							<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-						</fieldset>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img-sp">
-
-						<img src="<?=base_url()?>assets/web/img/sli4.jpg">
-
-					</div>
-					<div class="name">
-						Three Dots 3/4 Sleeve Deep V-Neck
-					</div>
-					<div class="cost">
-						<p>$696,000 <span>$700.000</span></p>
-					</div>
-					<div class='rating-widget'>
-						<fieldset class="rating">
-							<input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
-							<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-							<input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
-							<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-							<input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
-							<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-							<input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-							<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-							<input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
-							<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-						</fieldset>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img-sp">
-
-						<img src="<?=base_url()?>assets/web/img/sli5.jpg">
-
-					</div>
-					<div class="name">
-						Free People Super Cycle, ersey Number Graphic
-					</div>
-					<div class="cost">
-						<p>$696,000 <span>$700.000</span></p>
-					</div>
-					<div class='rating-widget'>
-						<fieldset class="rating">
-							<input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
-							<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-							<input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
-							<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-							<input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
-							<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-							<input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-							<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-							<input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
-							<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-						</fieldset>
-					</div>
-				</div>
+				<?php } ?>
+				<?php } ?>
 			</div>
 
 		</div>
@@ -603,7 +473,6 @@
 			<script>
 				var acc = document.getElementsByClassName("custom");
 				var i;
-
 				for (i = 0; i < acc.length; i++) {
 					acc[i].onclick = function() {
 						this.classList.toggle("active");
@@ -631,7 +500,6 @@
 			<script>
 				var acc = document.getElementsByClassName("custom");
 				var i;
-
 				for (i = 0; i < acc.length; i++) {
 					acc[i].onclick = function() {
 						this.classList.toggle("active");
@@ -657,7 +525,6 @@
 			<script>
 				var acc = document.getElementsByClassName("custom");
 				var i;
-
 				for (i = 0; i < acc.length; i++) {
 					acc[i].onclick = function() {
 						this.classList.toggle("active");
