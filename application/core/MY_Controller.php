@@ -37,7 +37,7 @@ class MY_Controller extends CI_Controller {
         }
     }
 }
-
+//các controller thuộc admin sẽ thừa kế từ class Admin_Controller
 class Admin_Controller extends MY_Controller {
     function __construct() {
         parent:: __construct();
@@ -52,7 +52,7 @@ protected function render($the_view = NULL, $template = 'master') {
     parent:: render($the_view, $template);
 }
 }
-
+//các controller thuộc fontend sẽ thừa kế từ class Public_Controller
 class Public_Controller extends MY_Controller {
     function __construct() {
     parent:: __construct();
