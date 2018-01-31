@@ -18,18 +18,21 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($data as $i => $item) { ?>                    
+                <?php foreach ($data as $i => $items) { ?>    
+                
                 <tr>
                     <td class="w50"><?=$i+1?></td>
                     <td>
-                    <?php if($item->picture!='') { ?>
-                    <img src="<?=base_url()?>uploads/<?=$item->picture?>" height="80">
-                    <?php } ?>
+                        <?php if($items->picture!='') { ?>
+                        <img src="<?=base_url()?>uploads/<?=$items->picture?>" height="80">
+                        <?php } ?>
                     </td>
-                    <td><?=$item->name?></td>
-                    <td><?=$item->cateid?></td>
-                    <td><?=$item->description?></td>
-                    <td><?=$item->price?></td>
+                    <td><?=$items->name?></td>
+                    <td > <?php foreach($list_group as $item) {?>  
+                        <?php if($item->id == $items->cateid){ echo $item->name;}?>
+                    <?php } ?></td>
+                    <td><?=$items->description?></td>
+                    <td><?=$items->price?></td>
                     <td class="w100 act">
                         <a href="<?=site_url('admin/productcontroller/edit/'.$item->id); ?>" ><span class="glyphicon glyphicon-pencil"></span></a>
                         <a class="delete-confirm" href="<?=site_url('admin/productcontroller/delete/'.$item->id); ?>"><span class="glyphicon glyphicon-trash"></span></a> 

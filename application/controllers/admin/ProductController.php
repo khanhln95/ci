@@ -53,26 +53,26 @@ class ProductController extends Admin_Controller {
                 }
             }
             $data = [
-             'picture' => $pic_name,
-             'name' => $this->input->post('name'),
-             'cateid' => $this -> input -> post('cateid'),
-             'description' => $this->input->post('description'),
-             'price' => $this->input->post('price'),
-         ];
-         $this->products_model->edit($id, $data);               
-         redirect('admin/productcontroller','refresh');
-     }
-     else {
-         $this->data['id_product'] = $id;
-         $this->load->model('category_model');
-         $this -> data['list_group'] = $this->category_model->getData();
-         $this->data['items'] = $this->products_model->getSingleData($id);
-         $this->render('admin/products/edit');
-     }
- }
+               'picture' => $pic_name,
+               'name' => $this->input->post('name'),
+               'cateid' => $this -> input -> post('cateid'),
+               'description' => $this->input->post('description'),
+               'price' => $this->input->post('price'),
+           ];
+           $this->products_model->edit($id, $data);               
+           redirect('admin/productcontroller','refresh');
+       }
+       else {
+           $this->data['id_product'] = $id;
+           $this->load->model('category_model');
+           $this -> data['list_group'] = $this->category_model->getData();
+           $this->data['items'] = $this->products_model->getSingleData($id);
+           $this->render('admin/products/edit');
+       }
+   }
 
 //ham xoa sản phẩm
- public function delete($id = NULL) {
+   public function delete($id = NULL) {
     $pic_name =  $this->products_model->getSingleData($id)->picture;
     if(is_file('./uploads/'.$pic_name)) {
         unlink('./uploads/'.$pic_name);
@@ -82,6 +82,8 @@ class ProductController extends Admin_Controller {
 }
 
 public function index() {
+    $this->load->model('category_model');
+    $this -> data['list_group'] = $this->category_model->getData();
     $this -> data['data'] = $this->products_model->getData();
     $this -> render('admin/products/list');
 }
