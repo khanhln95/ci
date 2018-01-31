@@ -10,7 +10,6 @@ class ProductController extends Admin_Controller {
         $this->load->library('upload', $config);
         $this->load->model('products_model');
     }
-    // public $data = array();
     
 
     public function create() {
@@ -21,7 +20,7 @@ class ProductController extends Admin_Controller {
             if ($this -> upload->do_upload('picture')) {
                 $pic_name = $this->upload->file_name;
             }
-        //$model chứa thông tin về sản phảm
+        //$data chứa thông tin về sản phảm
             $data = [
                 'picture' => $pic_name,
                 'name' => $this->input->post('name'),
@@ -49,8 +48,8 @@ class ProductController extends Admin_Controller {
         //nếu update hình ảnh mới thì thay thế và xoá ảnh cũ trong thư mục uploads
             if($this->upload->do_upload('picture')) {
                 $pic_name = $this->upload->file_name;
-                if(is_file('./uploads/'.$pic_name)) {
-                    unlink('./uploads/'.$pic_name);
+                if(is_file('./uploads/'.$this->products_model->getSingleData($id)->picture)) {
+                    unlink('./uploads/'.$this->products_model->getSingleData($id)->picture);
                 }
             }
             $data = [
