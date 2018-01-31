@@ -280,10 +280,10 @@
 
 						</div>
 						<div class="name">
-							Denim Shorts in Super Skinny
+							<?php echo $item->name ?>
 						</div>
 						<div class="cost">
-							<p>$696,000 <span>$700.000</span></p>
+							<p>$<?php echo $item->price ?> <span>$700.000</span></p>
 						</div>
 						<div class='rating-widget'>
 							<fieldset class="rating">
@@ -356,10 +356,10 @@
 
 					</div>
 					<div class="name">
-						Free People Super Cycle, ersey Number Graphic
+						<?php echo $item->name ?>
 					</div>
 					<div class="cost">
-						<p>$696,000 <span>$700.000</span></p>
+						<p>$<?php echo $item->price ?> <span>$700.000</span></p>
 					</div>
 					<div class='rating-widget'>
 						<fieldset class="rating">
