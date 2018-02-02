@@ -12,5 +12,6 @@ class LayoutController extends Public_Controller{
 	public function index($id=null){
 		$this->data['result'] = $this->products_model->getData($id);
 		$this->load->view('web/index', $this->data);
+		// debug_print_backtrace();
 	}
 }

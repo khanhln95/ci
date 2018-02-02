@@ -37,6 +37,7 @@ class ProductController extends Admin_Controller {
             $this -> data['list_group'] = $this->category_model->getData();
             $this->render('admin/products/create');
         }
+        // debug_print_backtrace();
     }
 
     //hàm chỉnh sửa thông tin sản phẩm
@@ -69,6 +70,7 @@ class ProductController extends Admin_Controller {
            $this->data['items'] = $this->products_model->getSingleData($id);
            $this->render('admin/products/edit');
        }
+       // debug_print_backtrace();
    }
 
 //ham xoa sản phẩm
@@ -86,6 +88,7 @@ public function index() {
     $this -> data['list_group'] = $this->category_model->getData();
     $this -> data['data'] = $this->products_model->getData();
     $this -> render('admin/products/list');
+    // debug_print_backtrace();
 }
 
 }

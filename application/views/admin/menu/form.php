@@ -4,7 +4,7 @@
     <div class="clearfix"></div>
     <div class="form-group">
         <label>Tên nhóm sản phẩm</label>
-        <div class="relative"><textarea class="form-control area-input" rows="1" name="name" id="name" data-error="Nhập tên"><?=(isset($items)) ? $items->menu_title : ''?></textarea></div>
+        <div class="relative"><textarea class="form-control area-input" rows="1" name="name" id="name" data-error="Nhập tên"><?=(isset($items)) ? $items->name : ''?></textarea></div>
     </div>
     <div class="form-group">
         <label>Giới thiệu</label>
