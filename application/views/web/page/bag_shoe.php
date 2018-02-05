@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 list-bag">
 				<div class="owl-carousel owl-theme owl-shoe">
-					<?php foreach ($result as $i => $item) { ?>
+					<?php foreach ($product as $i => $item) { ?>
 					<?php if($item->cateid == 2){ ?>
 					<div class="item">
 						<div class="img-sp">

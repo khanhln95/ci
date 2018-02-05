@@ -31,7 +31,7 @@
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 list-clothing">
 					<div class="owl-carousel owl-theme owl-clothing">
-						<?php foreach ($result as $i => $item) { ?>
+						<?php foreach ($product as $i => $item) { ?>
 						<?php if($item->cateid == 1){ ?>
 						<div class="item">
 							<div class="img-sp">

@@ -10,8 +10,6 @@ class ProductController extends Admin_Controller {
         $this->load->library('upload', $config);
         $this->load->model('products_model');
     }
-    
-
     public function create() {
         $this->data['button_title'] = 'Thêm Sản phẩm';
         if ($this->input->post()) {
