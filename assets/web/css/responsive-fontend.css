@@ -69,6 +69,12 @@
     background-color: #212121;
   }
   
+  #head-nav .dropdown-submenu .fa{
+    position: absolute; 
+    right: 4px; 
+    top: 6px
+  }
+  
   #header-bot {
     width: 100%;
     border-top: 1px solid #373737;

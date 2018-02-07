@@ -92,42 +92,56 @@
 								<?php foreach($menu as $m){ ?>
 								<li class="dropdown">
 									<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-									<?php echo $m->title ?>
-									<?php if(!empty($m->sub)){ ?> 
-									<span class="caret"></span>
+										<?php echo $m->title ?>
+										<?php if(!empty($m->sub)){ ?> 
+										<span class="caret"></span>
 										<?php } ?>
 									</a>
 									<?php if(!empty($m->sub)){ ?>
 									<ul class="dropdown-menu">
 										<?php foreach($m->sub as $s){ ?>
-										<li><a href="#"><?php echo $s->title ?></a></li>
+										<li class="dropdown-submenu">
+
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $s->title ?>
+												<?php if(!empty($s->sub)){ ?> 
+												<i class="fa fa-caret-right"></i>
+												<?php } ?>
+											</a>
+											<?php if(!empty($s->sub)){ ?>
+											<ul class="dropdown-menu">
+												<?php foreach($s->sub as $s1){ ?>
+												<li><a href="#"><?php echo $s1->title ?></a></li>
+												<?php } ?>
+											</ul>
+											<?php } ?>
+										</li>
 										<?php } ?>
 									</ul>
-										<?php } ?>
+									<?php } ?>
 								</li>
 								<?php } ?>
 
-								</ul>
-							</div>
+							</ul>
 						</div>
-					</nav>
-				</div>
+					</div>
+				</nav>
 			</div>
 		</div>
-		<div id="header-mid">
-			<div class="container">
-				<p class="text1">iriure dolor in Hendrerit</p>
-				<p class="text2">Duis autem vel eum </p>
-				<button type="button">SHOP MEN</button>
+	</div>
+	<div id="header-mid">
+		<div class="container">
+			<p class="text1">iriure dolor in Hendrerit</p>
+			<p class="text2">Duis autem vel eum </p>
+			<button type="button">SHOP MEN</button>
+		</div>
+	</div>
+	<div id="header-bot">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-4 col-md-4 ship"><span class="fa fa-truck"></span> Free Shipping on all orders over $100.</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 ship"><span class="glyphicon glyphicon-globe"></span> Worldwide Delivery and same day dispatch.</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 ship"><span class="glyphicon glyphicon-gift"></span> Receive Gifts when you 100 subscribe. </div>
 			</div>
 		</div>
-		<div id="header-bot">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-4 col-md-4 ship"><span class="fa fa-truck"></span> Free Shipping on all orders over $100.</div>
-					<div class="col-xs-12 col-sm-4 col-md-4 ship"><span class="glyphicon glyphicon-globe"></span> Worldwide Delivery and same day dispatch.</div>
-					<div class="col-xs-12 col-sm-4 col-md-4 ship"><span class="glyphicon glyphicon-gift"></span> Receive Gifts when you 100 subscribe. </div>
-				</div>
-			</div>
-		</div>
-	</header>
+	</div>
+</header>
