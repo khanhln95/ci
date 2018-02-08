@@ -18,7 +18,7 @@
 							<a href="#">Read more</a>
 						</div>
 					</div>
-					<img class="img-responsive" src="<?=base_url()?>assets/web/img/blog1.jpg">
+					<img class="img-responsive" src="<?=base_url()?>public/web/img/blog1.jpg">
 				</div>
 				<div class="item">
 					<p class="mid-blog">Vivamus vehicula urna non leo vehicula, et auctor nisi dapibus. Aliquam enim nulla</p>
@@ -31,7 +31,7 @@
 							<a href="#">Read more</a>
 						</div>
 					</div>
-					<img class="img-responsive" src="<?=base_url()?>assets/web/img/blog2.jpg">
+					<img class="img-responsive" src="<?=base_url()?>public/web/img/blog2.jpg">
 				</div>
 				<div class="item">
 					<p class="mid-blog">Vivamus vehicula urna non leo vehicula, et auctor nisi dapibus. Aliquam enim nulla</p>
@@ -44,7 +44,7 @@
 							<a href="#">Read more</a>
 						</div>
 					</div>
-					<img class="img-responsive" src="<?=base_url()?>assets/web/img/blog3.jpg">
+					<img class="img-responsive" src="<?=base_url()?>public/web/img/blog3.jpg">
 				</div>
 			</div>
 		</div>

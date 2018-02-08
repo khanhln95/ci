@@ -33,16 +33,16 @@
 			</div>
 			<div class="col-xs-12 col-md-5 payment">
 				<div class="img-payment">
-					<a href="#"><img src="<?=base_url()?>assets/web/img/payment.jpg"></a>
-					<a href="#"><img src="<?=base_url()?>assets/web/img/payment2.jpg"></a>
-					<a href="#"><img src="<?=base_url()?>assets/web/img/payment3.jpg"></a>
-					<a href="#"><img src="<?=base_url()?>assets/web/img/payment4.jpg"></a>
-					<a href="#"><img src="<?=base_url()?>assets/web/img/payment5.jpg"></a>
+					<a href="#"><img src="<?=base_url()?>public/web/img/payment.jpg"></a>
+					<a href="#"><img src="<?=base_url()?>public/web/img/payment2.jpg"></a>
+					<a href="#"><img src="<?=base_url()?>public/web/img/payment3.jpg"></a>
+					<a href="#"><img src="<?=base_url()?>public/web/img/payment4.jpg"></a>
+					<a href="#"><img src="<?=base_url()?>public/web/img/payment5.jpg"></a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="footer-logo">
-		<img src="<?=base_url()?>assets/web/img/footer.png">
+		<img src="<?=base_url()?>public/web/img/footer.png">
 	</div>
 </footer>

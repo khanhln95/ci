@@ -1,7 +1,7 @@
 <section id="footer-cont">
 	<div class="container">
 		<div class="col-xs-12 col-sm-12 col-md-3 describe">
-			<div class="bot-logo"><a href="#"><img src="<?=base_url()?>assets/web/img/qc4.jpg"></a></div>
+			<div class="bot-logo"><a href="#"><img src="<?=base_url()?>public/web/img/qc4.jpg"></a></div>
 			<p>Vestibulum sagittis, nisl nec pellentesque suscipit, arcu nisi maximus neque, vitae finibus erat odio eu lacus. Curabitur malesuada erat eros, quis dignissim dui accumsan id. Cras non imperdiet metus.
 			</p>
 			<div class="read"><a href="#">Continus Reading >></a></div>

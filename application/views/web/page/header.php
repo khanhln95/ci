@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="head1">
 				<div class="col-xs-12 col-sm-6 col-md-6 phone">
-					<img src="<?=base_url()?>assets/web/img/phone.jpg">
+					<img src="<?=base_url()?>public/web/img/phone.jpg">
 					<p>(0123) 456 7890</p>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 account">
@@ -20,7 +20,7 @@
 	<div id="header-top2">
 		<div class="container">
 			<div class="col-xs-12 col-md-3 logo">
-				<a href="#"><img src="<?=base_url()?>assets/web/img/logo.jpg"></a>
+				<a href="#"><img src="<?=base_url()?>public/web/img/logo.jpg"></a>
 			</div>
 			<div class="col-xs-12 col-md-4 search">
 				<div class="input-group">
