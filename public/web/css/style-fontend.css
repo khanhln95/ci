@@ -720,7 +720,7 @@ header {
 .owl-theme .owl-nav{
   display: none;
 }
-#advertise {
+#advertises {
   float: left;
   height: auto;
   width: 100%;
@@ -730,10 +730,9 @@ header {
   border-bottom: 1px solid #e5e5e5;
 }
 
-#advertise .img-qc {
+#advertises .img-qc {
   padding: 20px 0;
 }
-
 #footer-cont {
   float: left;
   height: auto;

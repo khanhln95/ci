@@ -160,7 +160,6 @@ function topFunction() { // When the user clicks on the button, scroll to the to
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-//------------------------------------------------
 //fixed navbar
 $(window).scroll(function() {
   var sticky = $('#head-nav'),

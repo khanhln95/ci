@@ -15,7 +15,7 @@
 		<div id="mid-content">
 			<div class="container">
 				<div class="box">
-					<p class="mid-title">clothings</p>
+					<h1 class="mid-title">clothings</h1>
 					<div class="clean"></div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 bn-jacket">
