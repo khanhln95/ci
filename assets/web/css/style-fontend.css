@@ -715,8 +715,10 @@ header {
   color: #fff;
 }
 #mid-content .list-clothing .owl-nav{
-  float: right;
-  margin-top: -500px;
+  display: none;
+}
+.owl-theme .owl-nav{
+  display: none;
 }
 #advertise {
   float: left;

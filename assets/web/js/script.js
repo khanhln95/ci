@@ -3,18 +3,21 @@ $(document).ready(function() {
   $('.owl-clothing').owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    
     dots: false,
     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
     responsive: {
       0: {
         items: 1,
+        nav: false
       },
       400: {
         items: 2,
+        nav: false
       },
       1200: {
         items: 2,
+        nav: true,
       }
     }
   })
@@ -45,7 +48,7 @@ $(document).ready(function() {
     responsive: {
       0: {
         items: 1,
-        nav: true
+        nav: false
       },
       1000: {
         items: 1,

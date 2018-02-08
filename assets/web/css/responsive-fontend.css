@@ -91,6 +91,7 @@
     margin-left: 18%;
     margin-top: 40%;
   }
+
   #mid-content .sell .img-sp .saler .rate {
     display: block;
     margin-left: 18%;
@@ -197,6 +198,14 @@
   #mid-content .list-clothing .img-sp:hover .hover, #mid-content .list-bag .img-sp:hover .hover, #mid-content .list-bag .img-sp:hover .hover {
     margin-left: 25%;
     margin-top: 50%;
+  }
+  #mid-content .list-clothing .owl-nav{
+    display: block;
+    float: right;
+    margin-top: -500px;
+  }
+  .owl-theme .owl-nav{
+    display: block;
   }
   #mid-content .sell .img-sp .saler .rate {
     margin-left: 25%;
