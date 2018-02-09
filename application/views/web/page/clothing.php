@@ -15,7 +15,7 @@
 		<div id="mid-content">
 			<div class="container">
 				<div class="box">
-					<h1 class="mid-title">clothings</h1>
+					<p class="mid-title">clothings</p>
 					<div class="clean"></div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 bn-jacket">
@@ -41,18 +41,13 @@
 									<a href="#" class="sale">Sale</a>
 									<p class="rate">-15%</p>
 								</div>
-
 								<div class="hover">
 									<a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
 									<a href=""><span class="fa fa-heart-o"></span></a>
 									<a href=""><span class="fa fa-exchange"></span></a>
 								</div>
-								
 								<?php if($item->picture != ''){?>
 								<img src="<?=base_url()?>uploads/<?=$item->picture?>">
-								
-
-
 							</div>
 							<div class="name">
 								<?php echo $item->name ?>
@@ -82,8 +77,7 @@
 				</div>
 			</div>
 		</div>
-</section>
-<div class="btnTop">
-	<button onclick="topFunction()" id="btnBackToTop" title="Go to top"><i class="fa fa-sort-desc" aria-hidden="true"></i></button>
-
-</div>
+	</section>
+	<div class="btnTop">
+		<button onclick="topFunction()" id="btnBackToTop" title="Go to top"><i class="fa fa-sort-desc" aria-hidden="true"></i></button>
+	</div>
